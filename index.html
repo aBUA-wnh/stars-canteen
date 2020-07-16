@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="zh">
+	<head>
+		<meta charset="UTF-8">
+		<title>贴吧</title>
+		<link rel="stylesheet" type="text/css" href="css/index.css"/>
+		<script src="js/index.js"></script>
+	</head>
+	<body>
+		<!-- 内容 -->
+		<div class="content">
+			<!-- 贴吧顶部 -->
+			<div class="div_t">
+				<div class="div_t_1">
+					<div class="t_1_tx">
+						<div class="t_1_tx_div">
+							<img src="img/tx.jpg" class="t_1_tx_img">
+						</div>
+					</div>
+					<div class="t_1_tle">
+						<span class="t_1_tle_span">小星食堂</span>
+					</div>
+					<div class="t_1_signIn">
+						<div class="t_1_div">
+							<a href="#" class="t_1_div_a">签到</a>
+							<span class="t_1_div_span1" id="t_1_div_span1"></span>
+							<span class="t_1_div_span2">漏签<a href="">0</a>天</span>
+						</div>
+					</div>
+				</div>
+				<div class="div_t_2">
+					<a href="#" class="t_2_a">
+						<span class="t_2_a_span1" style="line-height: 60px;">
+							<img src="img/表单.png" class="t_2_img">
+						</span>
+						<span class="t_2_a_span2">看贴</span>
+					</a>
+					<span class="t_2_span"></span>
+					<a href="#" class="t_2_a">
+						<span class="t_2_a_span1" style="line-height: 58px;">
+							<img src="img/图片.png" class="t_2_img">
+						</span>
+						<span class="t_2_a_span2">图片</span>
+					</a>
+					<span class="t_2_span"></span>
+					<a href="#" class="t_2_a">
+						<span class="t_2_a_span1" style="line-height: 60px;">
+							<img src="img/星星.png" class="t_2_img">
+						</span>
+						<span class="t_2_a_span2">精品</span>
+					</a>
+					<span class="t_2_span"></span>
+					<a href="#" class="t_2_a">
+						<span class="t_2_a_span1" style="line-height: 62px;">
+							<img src="img/视频.png" class="t_2_img">
+						</span>
+						<span class="t_2_a_span2">视频</span>
+					</a>
+					<span class="t_2_span"></span>
+					<a href="#" class="t_2_a">
+						<span class="t_2_a_span1" style="line-height: 60px;">
+							<img src="img/游戏.png" class="t_2_img">
+						</span>
+						<span class="t_2_a_span2">游戏</span>
+					</a>
+				</div>
+				<div class="div_t_3">
+					<span class="t_3_span"><a href="#" class="return_a" id="return_a1">3</a>回复贴，共<a href="#" class="return_a">1</a>页</span>
+				</div>
+			</div>
+			<!-- 帖子内容 -->
+			<div class="div_l">
+				<!-- 帖子标题 -->
+				<div class="div_tle">
+					<span class="div_tle_span1">欢迎来到小星星的深夜食堂！</span>
+					<span class="div_tle_span2">
+						<input type="button" class="div_tle_inp" value="只看楼主" />
+						<input type="button" class="div_tle_inp" value="收藏" />
+						<input type="button" class="div_tle_inp" value="回复" />
+					</span>
+				</div>
+				<!-- 楼主 -->
+				<div class="div_cont">
+					<div class="div_cont_l">
+						<div class="div_tx">
+							<div class="tx_div">
+								<img src="img/tx.jpg" class="tx_img">
+							</div>
+						</div>
+						<a href="#" class="name_a1">小星星</a>
+						<a href="#" class="name_a2">食堂管理员</a>
+					</div>
+					<div class="div_cont_r">
+						<!-- 层主内容 -->
+						<span class="cont_r_span1">没世界上最治愈的东西，第一是美食，第二才是文字。</span>
+						<img src="img/wallhaven-zm5pzw.jpg" class="cont_r_img">
+						<!-- 回复框 -->
+						<div class="div_cont_b">
+							<a href="#footer_l_div2" class="cont_r_a">回复</a>
+							<span class="cont_r_span2">来自<a href="#">iPhone客户端</a> 楼主 2019-10-30 18:12</span>
+						</div>
+					</div>
+				</div>
+				
+				<!-- 回复内容 -->
+				<div id="div_reply">
+					<!-- 1楼 -->
+					<div class="div_cont">
+						<div class="div_cont_l">
+							<div class="div_tx">
+								<div class="tx_div">
+									<img src="img/tx2.jpg" class="tx_img">
+								</div>
+							</div>
+							<a href="#" class="name_a1">阿BUA</a>
+							<a href="#" class="name_a2">星星食客</a>
+						</div>
+						<div class="div_cont_r">
+							<!-- 层主内容 -->
+							<span class="cont_r_span1">享受美食的时间是快乐的，但是等待美食出炉的时间是最快乐的。</span>
+							<img src="img/wallhaven-r2gqlj.jpg" class="cont_r_img">
+							<!-- 回复框 -->
+							<div class="div_cont_b">
+								<a class="cont_r_a" id="cont_r_a1" onclick="expand_1()">回复</a>
+								<a class="unfold_a" id="unfold_a1" onclick="packUp_1()">收起回复</a>
+								<span class="cont_r_span2">来自<a href="#">iPhone客户端</a> 1楼 2019-10-30 18:14</span>
+							</div>
+							<!-- 回复栏 -->
+							<div class="unfold" id="unfold1">
+								<!-- 回复 -->
+								<div id="replyList1">
+									<div class="unfold_cont">
+										<div class="unfold_tx">
+											<img src="img/tx.jpg" class="unfold_tx_img" >
+										</div>
+										<span class="unfold_span1">
+											<a href="#">小星星</a>:回复<a href="#"> 阿BUA</a>:
+										</span>
+										<span class="unfold_span2">哈哈哈哈哈哈哈哈哈哈嗝~</span>
+										<span class="unfold_span3">
+											2019-10-30 20:02
+											<a href="#"> 回复</a>
+										</span>
+									</div>
+								</div>
+								<a class="reply_a1" onclick="replyBox_1()">我也说一句</a>
+								<div id="reply_div1" style="display: none;">
+									<textarea class="unfold_text" id="unfold_text1"></textarea>
+									<span class="reply_tip" id="reply_tip1">发帖内容需包含文字</span>
+									<a class="reply_a2" onclick="reply_1()">发表</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					
+					<!-- 2楼 -->
+					<div class="div_cont">
+						<div class="div_cont_l">
+							<div class="div_tx">
+								<div class="tx_div">
+									<img src="img/tx1.jpg" class="tx_img">
+								</div>
+							</div>
+							<a href="#" class="name_a1">小萝北</a>
+							<a href="#" class="name_a2">星星食客</a>
+						</div>
+						<div class="div_cont_r">
+							<!-- 层主内容 -->
+							<span class="cont_r_span1">美食和风景，可以抵抗全世界所有的悲伤和迷惘。</span>
+							<img src="img/wallhaven-43vro3.jpg" class="cont_r_img">
+							<!-- 回复框 -->
+							<div class="div_cont_b">
+								<a class="cont_r_a" id="cont_r_a2" onclick="expand_2()">回复</a>
+								<a class="unfold_a" id="unfold_a2" onclick="packUp_2()">收起回复</a>
+								<span class="cont_r_span2">来自<a href="#">iPhone客户端</a> 2楼 2019-10-30 19:08</span>
+							</div>
+							<!-- 回复栏 -->
+							<div class="unfold" id="unfold2">
+								<!-- 回复 -->
+								<div id="replyList2">
+									<div class="unfold_cont">
+										<div class="unfold_tx">
+											<img src="img/tx.jpg" class="unfold_tx_img" >
+										</div>
+										<span class="unfold_span1">
+											<a href="#">小星星</a>:回复<a href="#"> 小萝北</a>:
+										</span>
+										<span class="unfold_span2">哈哈哈哈哈哈哈哈哈哈嗝~</span>
+										<span class="unfold_span3">
+											2019-10-30 22:02
+											<a href="#"> 回复</a>
+										</span>
+									</div>
+								</div>
+								<a class="reply_a1" onclick="replyBox_2()">我也说一句</a>
+								<div id="reply_div2" style="display: none;">
+									<textarea class="unfold_text" id="unfold_text2"></textarea>
+									<span class="reply_tip" id="reply_tip2">发帖内容需包含文字</span>
+									<a class="reply_a2" onclick="reply_2()">发表</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					
+					<!-- 3楼 -->
+					<div class="div_cont">
+						<div class="div_cont_l">
+							<div class="div_tx">
+								<div class="tx_div">
+									<img src="img/tx3.jpg" class="tx_img">
+								</div>
+							</div>
+							<a href="#" class="name_a1">咸鱼</a>
+							<a href="#" class="name_a2">星星食客</a>
+						</div>
+						<div class="div_cont_r">
+							<!-- 层主内容 -->
+							<span class="cont_r_span1">人世间，唯有爱与美食不可辜负，爱已经辜负的太多了，美食就不能再辜负了。</span>
+							<img src="img/wallhaven-48kzdo.jpg" class="cont_r_img">
+							<!-- 回复框 -->
+							<div class="div_cont_b">
+								<a class="cont_r_a" id="cont_r_a3" onclick="expand_3()">回复</a>
+								<a class="unfold_a" id="unfold_a3" onclick="packUp_3()">收起回复</a>
+								<span class="cont_r_span2">来自<a href="#">iPhone客户端</a> 3楼 2019-11-05 13:14</span>
+							</div>
+							<!-- 回复栏 -->
+							<div class="unfold" id="unfold3">
+								<!-- 回复 -->
+								<div id="replyList3">
+									<div class="unfold_cont">
+										<div class="unfold_tx">
+											<img src="img/tx.jpg" class="unfold_tx_img" >
+										</div>
+										<span class="unfold_span1">
+											<a href="#">小星星</a>:回复<a href="#"> 咸鱼</a>:
+										</span>
+										<span class="unfold_span2">嗝嗝~</span>
+										<span class="unfold_span3">
+											2019-11-05 14:13
+											<a href="#"> 回复</a>
+										</span>
+									</div>
+								</div>
+								<a class="reply_a1" onclick="replyBox_3()">我也说一句</a>
+								<div id="reply_div3" style="display: none;">
+									<textarea class="unfold_text" id="unfold_text3"></textarea>
+									<span class="reply_tip" id="reply_tip3">发帖内容需包含文字</span>
+									<a class="reply_a2" onclick="reply_3()">发表</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<!-- 右边部分 -->
+			<div class="div_r">
+			</div>
+		</div>
+		<!-- 返回 -->
+		<div class="return">
+			<span class="return_span"><a href="#" class="return_a" id="return_a2">3</a>回复贴，共<a href="#" class="return_a">1</a>页</span>
+		</div>
+		<!-- 页脚 -->
+		<div class="footer">
+			<div class="footer_l">
+				<div class="footer_l_div">
+					<div class="footer_l_div1">
+						<span class="footer_div1_span1">发布回复</span>
+						<span class="footer_div1_span2">发帖请遵守<a href="#">贴吧协议及“七条底线”</a></span>
+					</div>
+					<div class="footer_l_div2" id="footer_l_div2">
+						<textarea class="footer_text" id="content"></textarea>
+					</div>
+					<div class="footer_l_div3">
+						<span class="footer_tip" id="footer_tip">发帖内容需包含文字</span>
+						<input type="button" class="footer_div3_btn" value="发表" onclick="publish()"/>
+					</div>
+				</div>
+			</div>
+			<div class="footer_r"></div>
+			<div class="footer_b">
+				<div class="footer_b_div">
+					<span>&copy;2019 Baidu</span>
+					<span><a href="#">贴吧协议</a></span>
+					<span>|</span>
+					<span><a href="#">隐私政策</a></span>
+					<span>|</span>
+					<span><a href="#">吧主制度</a></span>
+					<span>|</span>
+					<span><a href="#">意见反馈</a></span>
+					<span>|</span>
+					<span><a href="#">网络谣言警示</a></span>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
